@@ -7,8 +7,6 @@ This project implements a deep learning solution for optimizing energy consumpti
 - Data preprocessing and feature engineering for time-series energy data
 - Deep learning model for energy consumption prediction
 - Real-time monitoring capabilities
-- Early stopping and model checkpoint saving
-- Comprehensive evaluation metrics
 
 ## Prerequisites
 - Python 3.10 or higher
@@ -16,13 +14,7 @@ This project implements a deep learning solution for optimizing energy consumpti
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd steel_energy_optimization
-```
-
-2. Install dependencies using Poetry:
+1. Install dependencies using Poetry:
 ```bash
 poetry install
 ```
@@ -32,15 +24,12 @@ poetry install
 steel_energy_optimization/
 ├── data/
 │   ├── raw/                    # Raw dataset files
-│   └── processed/              # Processed dataset files
 ├── notebooks/                  # Jupyter notebooks for analysis
-├── results/                    # Model outputs and visualizations
 ├── src/
 │   └── steel_energy_opt/
 │       ├── data_processor.py   # Data processing utilities
 │       ├── model.py           # PyTorch model implementation
 │       └── train.py           # Training script
-├── tests/                     # Unit tests
 ├── poetry.lock               # Lock file for dependencies
 ├── pyproject.toml            # Project configuration
 └── README.md                # This file
@@ -69,17 +58,6 @@ poetry run python -m steel_energy_opt.train
 The neural network model consists of:
 - Multiple fully connected layers with ReLU activation
 - Dropout layers for regularization
-- Configurable architecture through hyperparameters
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 - UCI Machine Learning Repository for providing the dataset
